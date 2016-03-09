@@ -5,7 +5,7 @@ Introduction
    :maxdepth: 2
 
 
-Welcome to the BIOMENG321 Soft tissue mechanics labs. These instructions will take you through the following topics that are covered during these labs:
+Welcome to the BIOMENG321 tissue mechanics labs. These instructions will take you through the following topics that are covered during these labs:
 
 - :ref:`Lab 1: Deformation and stress in isotropic materials <lab1>` 
 
