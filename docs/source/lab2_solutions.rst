@@ -19,28 +19,14 @@ Section 2: Biaxial extension of a unit cube
 
 .. math::
 
-    \boldsymbol{E_{ref}} = 
+    \boldsymbol{E_{ref}} = \boldsymbol{E_{fib}} = 
     \begin{bmatrix}
       0.2812 & 0      & 0 \\
       0      & 0.2812 & 0 \\
       0      & 0      & -0.2952
     \end{bmatrix}
 
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.2812 & 0      & 0 \\
-      0      & 0.2812 & 0 \\
-      0      & 0      & -0.2952
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      10.95  & 0       & 0 \\
-      0      & 0.10.95 & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
+    \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
     \begin{bmatrix}
       10.95  & 0       & 0 \\
       0      & 0.10.95 & 0 \\
@@ -53,28 +39,14 @@ Section 2: Biaxial extension of a unit cube
 
 .. math::
 
-    \boldsymbol{E_{ref}} = 
+    \boldsymbol{E_{ref}} = \boldsymbol{E_{fib}} = 
     \begin{bmatrix}
       0.2812 & 0      & 0 \\
       0      & 0.2812 & 0 \\
       0      & 0      & -0.2952
     \end{bmatrix}
 
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.2812 & 0      & 0 \\
-      0      & 0.2812 & 0 \\
-      0      & 0      & -0.2952
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      10.95  & 0     & 0 \\
-      0      & 10.95 & 0 \\
-      0      & 0     & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
+    \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
     \begin{bmatrix}
       10.95  & 0     & 0 \\
       0      & 10.95 & 0 \\
@@ -93,28 +65,14 @@ Section 3: Uniaxial extension of a unit cube
 
 .. math::
 
-    \boldsymbol{E_{ref}} = 
+    \boldsymbol{E_{ref}} = \boldsymbol{E_{fib}} = 
     \begin{bmatrix}
       0.6250 & 0       & 0 \\
       0      & -0.1667 & 0 \\
       0      & 0       & -0.1667
     \end{bmatrix}
 
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.6250 & 0       & 0 \\
-      0      & -0.1667 & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      440.5  & 0       & 0 \\
-      0      & 0       & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
+    \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
     \begin{bmatrix}
       440.5  & 0       & 0 \\
       0      & 0       & 0 \\
