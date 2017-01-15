@@ -157,7 +157,7 @@ Section 3: Equi-biaxial extension of a unit cube
     \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
     \begin{bmatrix}
       10.95  & 0       & 0 \\
-      0      & 0.10.95 & 0 \\
+      0      & 10.95 & 0 \\
       0      & 0       & 0
     \end{bmatrix}
 
