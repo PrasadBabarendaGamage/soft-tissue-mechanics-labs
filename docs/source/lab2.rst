@@ -12,13 +12,13 @@ Lab 2: Stress transformations
 .. toctree::
    :maxdepth: 2
 
-The objective of this lab is to:
+The objectives of this lab are to:
 
-      1. transform 2nd Piola-Kirchhoff stresses to Cauchy stresses.
+      1. transform 2nd Piola-Kirchhoff stress tensor components to Cauchy tensor components.
 
-      2. transform stresses and strains between reference and material (fibre) coordinates.
+      2. transform stresses and strains between reference spatial and material (fibre) coordinates.
 
-The deformations that will be considered in this lab include uniaxial and equi-biaxial extension of a unit cube.
+The deformations that will be considered in this lab include uniaxial deformation and equi-biaxial extension of a unit cube.
 
 ========
 Revision
