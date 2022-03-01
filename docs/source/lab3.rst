@@ -18,20 +18,20 @@ The objective of this lab is to learn how to analyse anisotropic constitutive eq
 Revision
 ========
 Before starting this lab, please be sure to have completed:
-  1. :ref:`Lab 1: Analysing deformation in isotropic materials <lab1>`, and
-  2. :ref:`Lab 2: Stress transformations <lab2>`.
+  a. :ref:`Lab 1: Analysing deformation in isotropic materials <lab1>`, and
+  b. :ref:`Lab 2: Stress transformations <lab2>`.
 
 Section 2 of :ref:`Lab 2<lab2>` demonstrated how rotating the material-fibre axis with respect to the reference axes influences the components of the stress tensor.  For the model in :ref:`Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`, which considers an **isotropic cube subject to equi-biaxial deformation**, remind yourself:
 
-  - what happened to the components of the stress tensor as the material-fibre axis was rotated? Why?
+  - What happened to the components of the stress tensor as the material-fibre axis was rotated? Why?
   
-All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`.
+All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`. The difference here is that we will now consider **anisotropic** mechanical properties that describe different stress-strain response alonf the different material axes.
 
 ===================================================
 Section 1: Deriving components of the stress tensor
 ===================================================
 
-1. Consider the following exponential constitutive relation, which will be used to describe the distortional mechanical response of the cube considered in this lab:
+1. Consider the following exponential constitutive relation, which is used to describe the **distortional** mechanical response of the cube considered in this lab:
 
   .. math::
 
@@ -48,7 +48,7 @@ Section 1: Deriving components of the stress tensor
           2c_{fn}(\frac{1}{2}(E_{fn}+E_{nf}))^{2} + 
           2c_{ns}(\frac{1}{2}(E_{ns}+E_{sn}))^{2}
 
-  Differentiate this strain energy density function with respect to the Green-Lagrange strain components (:math:`E_{\alpha \beta}`), and thus derive generalised analytic expressions for the **distortional components of the second Piola-Kirchhoff stress tensor** in terms of the strain components and the material constants: :math:`c_1, c_{ff}, c_{ss}, c_{nn}, c_{fs}, c_{fn}, c_{ns}`.
+Differentiate this strain energy density function with respect to each of the nine Green-Lagrange strain components (:math:`E_{\alpha \beta}`), where :math:`\alpha` and :math:`\beta` each represent one of the microstructural material coordinates, (:math:`f,s,n`). Thus, derive generalised analytical expressions for the nine **distortional components of the second Piola-Kirchhoff stress tensor** in terms of the strain components and the material constants: :math:`c_1, c_{ff}, c_{ss}, c_{nn}, c_{fs}, c_{fn}, c_{ns}`.
 
   .. Note::
 
@@ -60,46 +60,59 @@ Section 1: Deriving components of the stress tensor
 
 |vspace|
 
-2. Assume that the material is incompressible, and write down analytic expressions for the **total stress components**: :math:`T^{ff}` and :math:`T^{ss}` (see Eqn 38 of `Nash and Hunter (2007) <https://canvas.auckland.ac.nz/courses/14750/files/27954/download?wrap=1>`_, or Eqn 15 of `Nash and Hunter (2000) <http://link.springer.com/article/10.1023%2FA%3A1011084330767>`_).
-
-  .. Note::
-
-      - :math:`\{C^{MN}\}` is the **inverse** of :math:`\{C_{MN}\}`. (They are different tensors!)
-
-      - It is straightforward to invert a diagonal tensor. Check that :math:`\{C_{MN}\}^{-1}\{C_{MN}\}=\boldsymbol{I}`.
-
-
-|vspace|
-
 =============================================================
 Section 2: Analysing stresses during equi-biaxial deformation
 =============================================================
 
-Stresses with respect to the reference axes
--------------------------------------------
+Analysing stresses with respect to the reference coordinates
+------------------------------------------------------------
 
-3. Using OpenCMISS, load the stress analysis project and run Model 1. (The procedure for running this simulation in OpenCMISS is outlined in :ref:`steps 1-3 in Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`).
+2. Using OpenCMISS, load the stress analysis project and run Model 1. (The procedure for running this simulation in OpenCMISS is outlined in :ref:`steps 1-3 in Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`). See :ref:`this link <opening_simulation_pane>` for an example on how to open the simulation results pane.
 
-4. The Model 1 simulation uses the above constitutive equation with the following material constants:
+|vspace|
+
+3. The Model 1 simulation uses the above constitutive equation with the following material constants:
 
   .. math::
 
     c_{1} &= 0.0475~kPa \\
     c_{ff} = c_{ss} = c_{nn} &= c_{fs} = c_{fn} = c_{ns} = 15.25 \\
 
-  Substitute the Green-Lagrange strain components (:math:`\boldsymbol{E}_{ref}`) for this equi-biaxial deformation into your analytic expressions from Step 1 of this lab to determine values for the **distortional components of the second Piola-Kirchhoff stress tensor**. Verify that these distortional stresses are:
+  Substitute the Green-Lagrange strain components (:math:`\boldsymbol{E}_{ref}`) for this equi-biaxial deformation into your analytical expressions from Step 1 of this lab to determine values for the **distortional components of the second Piola-Kirchhoff stress tensor**. Verify that these distortional stresses are:
 
   .. math::
 
-    T_{ref}^{ff\_dist} = T_{ref}^{ss\_dist} = 8.59~kPa ~~~~ (\text{note}~Q=3.74)
+    T_{ref}^{ff\_dist} = T_{ref}^{ss\_dist} = 8.59~kPa
+
+  .. Note::
+
+      - Hint: in the steps below, you will use your your analytical equations from step 1 repeatedly to do number of calculations (with different parameters), so you might consider encoding your equations using a high level programming language (python, C, Matlab, etc) or a spreadsheet.
+
+      - Hint: :math:`Q=3.74`.
+
+      - Your calculations for :math:`T_{ref}^{ff\_dist}` and :math:`T_{ref}^{ss\_dist}` could be within :math:`{\pm}0.02~kPa` of the solution stated above due to round off errors.
+
+      - These **distortional components of the second Piola-Kirchhoff stress tensor** (e.g. :math:`T_{ref}^{ff\_dist}`) do not match the stress values shown in the OpenCMISS results panel because the OpenCMISS results show only the **total stress components**, which will be considered in the following steps.
 
 |vspace|
 
-5. Calculate the **total stress components**: :math:`T_{ref}^{ff}` and :math:`T_{ref}^{ss}` using the expressions you wrote down in Step 2 above. This requires use of the **hydrostatic pressure**, :math:`p`, which is provided in the simulation results. Check your total stress values against the simulation results.
+4. Now assume that the material is incompressible, and write down analytical expressions for the **total stress components** with respect to the reference coordinates: :math:`T_{ref}^{ff}` and :math:`T_{ref}^{ss}` (these are shown as :math:`T^{ff}` and :math:`T^{ss}` in Eqn 38 of `Nash and Hunter (2007) <https://github.com/OpenCMISS-Examples/soft-tissue-mechanics-labs/releases/download/v2.0/chapter-heartmech_nash_hunter_2007_wspc_2up.pdf>`_, or Eqn 15 of `Nash and Hunter (2000) <http://link.springer.com/article/10.1023%2FA%3A1011084330767>`_).
 
 |vspace|
 
-6. Using this analysis, what can you infer about the material symmetry of the model? Why? 
+5. Calculate the **total stress components** with respect to the reference coordinates: :math:`T_{ref}^{ff}` and :math:`T_{ref}^{ss}` using the expressions you wrote down in Step 4 above. This requires addition of a dilatational component of stress called the **hydrostatic pressure**, :math:`p`, which is a scalar variable with a value that is provided in the simulation results. Check your total stress values against those in the simulation results.
+
+  .. Note::
+
+      - :math:`\{C^{MN}\}` is the **inverse** of :math:`\{C_{MN}\}`. (They are different tensors)
+
+      - It is straightforward to invert a diagonal tensor. Check that :math:`\{C_{MN}\}^{-1}\{C_{MN}\}=\boldsymbol{I}`.
+
+|vspace|
+
+6. Using this analysis, what can you infer about the material symmetry of Model 1? Explain your observation. 
+
+|vspace|
 
 |vspace|
 
@@ -115,15 +128,15 @@ Stresses with respect to the reference axes
     c_{fn} &= 6.05 ~~~~
     c_{ns} &= 4.93
 
-  Re-use your analytic expressions from Step 1 above to calculate, for this new model, the distortional second Piola-Kirchhoff stress tensor components: :math:`T_{ref}^{ff\_dist}` and :math:`T_{ref}^{ss\_dist}`
+  Re-use your analytical expressions from Step 1 above, now with these new material constants, to calculate **distortional components** of the second Piola-Kirchhoff stress tensor: :math:`T_{ref}^{ff\_dist}` and :math:`T_{ref}^{ss\_dist}` with respect to the reference axes.
 
 |vspace|
 
-8.  Re-use your analytic expressions from Step 2 above to calculate, for this new model, the total stress components: :math:`T_{ref}^{ff}` and :math:`T_{ref}^{ss}` (use the hydrostatic pressure value, :math:`p`, from the simulation results). Check your answers against the simulation results.
+8.  Re-use your analytical expressions from Step 4 above to calculate, for Model 2, the **total** stress components: :math:`T_{ref}^{ff}` and :math:`T_{ref}^{ss}` (use the new hydrostatic pressure value, :math:`p`, from the simulation results). Check your answers against the simulation results.
 
 |vspace|
 
-9. Explain the similarities and differences in the total second Piola-Kirchhoff stress components from Steps 5 and 8.  What can you infer about the material symmetry of this model?
+9. Explain the similarities and differences in the total second Piola-Kirchhoff stress components from Steps 5 and 8.  What can you infer about the mechanical responses (material symmetries) of the two models?
 
 |vspace|
 
@@ -154,17 +167,21 @@ Stresses with respect to rotated material-fibre axes
 
 |vspace|
 
-====================
-Section 3: Questions
-====================
 
-After you have completed the exercises above, consider the following questions: 
+Extra discussion points for experts
+-----------------------------------
 
-a. What do you notice about the stress tensors, :math:`\boldsymbol{T}_{fib}` and :math:`\boldsymbol{T}_{ref}`, from the above analyses for the isotropic (Model 1) and anisotropic (Models 2,5,6) materials subject to equi-biaxial deformations? Why?
+If you have completed the exercises above, you may like to consider the following questions: 
 
-b. What would you expect if you compared the maximum principal stresses for each of the anisotropic cases (Models 2,5,6)?
+a. What do you notice about the stress tensors, :math:`\boldsymbol{T}_{fib}` and :math:`\boldsymbol{T}_{ref}`, from the above analyses for the isotropic (Model 1) and anisotropic (Models 2,5,6) materials subject to equi-biaxial deformations? Explain this observation.
 
-c. For what types of deformations would you expect the stress tensors to be different?
+|vspace|
+
+b. Model 1 considers equi-biaxial deformation, and there were similarities in some of the stress components. If, instead, a uniaxial stretch was applied along the :math:`X_{1}` direction, predict what would happed to the components of stress.
+
+|vspace|
+
+c. What would you expect if you compared the maximum principal stresses for each of the anisotropic cases (Models 2,5,6)? Justify your amswer.
 
 |vspace|
 

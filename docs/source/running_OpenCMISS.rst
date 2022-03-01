@@ -15,7 +15,7 @@ This lab will make use of the `OpenCMISS <http://opencmiss.org/>`_ computational
 Installing OpenCMISS
 ====================
 
-An OpenCMISS installer for Windows 7 (64-bit) can be downloaded from this `link <https://github.com/OpenCMISS-Examples/soft-tissue-mechanics-labs/releases/download/v2.0/OpenCMISS-0.2.2.exe>`_.
+An OpenCMISS installer for Windows 10 (64-bit) can be downloaded from this `link <https://github.com/OpenCMISS-Examples/soft-tissue-mechanics-labs/releases/download/v2.0/OpenCMISS-0.2.2.exe>`_.
 
 .. _starting-OpenCMISS:
 

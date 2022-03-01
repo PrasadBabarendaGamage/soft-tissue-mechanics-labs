@@ -12,10 +12,10 @@ Lab 2, Section 2: Solutions
 .. _lab2_section2_step8_solutions:
 
 =========================================
-Step 8: Uniaxial extension of a unit cube
+Steps 1-8: Uniaxial extension of a unit cube
 =========================================
 
-:math:`\theta=0` degrees:
+:math:`\theta=0` degrees (Steps 1-2):
 
 .. math::
 
@@ -35,7 +35,7 @@ Step 8: Uniaxial extension of a unit cube
 
 |vspace|
 
-:math:`\theta=30` degrees:
+:math:`\theta=30` degrees (Steps 3-7):
 
 .. math::
 
@@ -69,7 +69,7 @@ Step 8: Uniaxial extension of a unit cube
 
 |vspace|
 
-:math:`\theta=45` degrees:
+:math:`\theta=45` degrees (Step 8):
 
 .. math::
 
@@ -103,7 +103,7 @@ Step 8: Uniaxial extension of a unit cube
 
 |vspace|
 
-:math:`\theta=90` degrees:
+:math:`\theta=90` degrees (Step 8):
 
 .. math::
 
