@@ -5,9 +5,9 @@
 
 .. _lab2:
 
-*****************************
-Lab 2: Stress transformations
-*****************************
+****************************************
+Lab 2: Strain and stress transformations
+****************************************
 
 .. toctree::
    :maxdepth: 2
