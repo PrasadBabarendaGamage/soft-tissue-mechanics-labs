@@ -155,7 +155,7 @@ Stresses with respect to rotated material-fibre axes
 
 |vspace|
 
-13. How do the stress components of :math:`\boldsymbol{T}_{fib}` and :math:`\boldsymbol{T}_{ref}` for this model compare to the components of :math:`\boldsymbol{T}_{ref}` for the previous model in Step 5 above? Explain the similarities and differences.
+13. How do the stress components of :math:`\boldsymbol{T}_{fib}` and :math:`\boldsymbol{T}_{ref}` for this model compare to the components of :math:`\boldsymbol{T}_{ref}` for the previous model in Step 7 above? Explain the similarities and differences.
 
 |vspace|
 
