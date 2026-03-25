@@ -14,9 +14,9 @@ Lab 2: Strain and stress transformations
 
 The objectives of this lab are to:
 
-      1. transform 2nd Piola-Kirchhoff stress tensor components to Cauchy tensor components.
+  1. transform 2nd Piola-Kirchhoff stress tensor components to Cauchy tensor components.
 
-      2. transform stresses and strains between reference spatial and material (fibre) coordinates.
+  2. transform stresses and strains between reference spatial and material (fibre) coordinates.
 
 The deformations that will be considered in this lab include uniaxial deformation and equi-biaxial extension of a unit cube.
 
@@ -70,7 +70,7 @@ Equi-biaxial extension of a unit cube
 
 |vspace|
 
-5. Write down:
+5. Write down (see :ref:`Lab 1 <lab1>`):
 
    - the deformation gradient tensor (:math:`\boldsymbol{F}=\frac{\partial\boldsymbol{x}}{\partial\boldsymbol{X}}`),
    - the right Cauchy-Green deformation tensor (:math:`\boldsymbol{C}`), and
@@ -78,7 +78,7 @@ Equi-biaxial extension of a unit cube
 
    .. Note::
 
-       This is the same deformation used in Model 2 of Lab 1, so you should not need to re-do these calculations.
+       This is the same deformation used in Model 2 of :ref:`Lab 1 <lab1>`, so you should not need to re-do these calculations.
 
 |vspace|
 
@@ -161,7 +161,7 @@ Equi-biaxial deformation with respect to rotated material fibre axes
 
 |vspace|
 
-Here are the :ref:`solutions to Step 13 <lab2_section2_step21_solutions>`.
+Here are the :ref:`solutions to Step 13 <lab2_section1_step13_solutions>`.
 
 Uniaxial extension of a unit cube
 ---------------------------------
@@ -185,7 +185,7 @@ Uniaxial extension of a unit cube
 
 |vspace|
 
-15. Write down (see :ref:`Lab 1 <lab1>`):
+15. Write down:
 
     - the deformation gradient tensor, :math:`\boldsymbol{F}=\frac{\partial\boldsymbol{x}}{\partial\boldsymbol{X}}`
     - the right Cauchy-Green deformation tensor, :math:`\boldsymbol{C}` and
@@ -274,7 +274,7 @@ Uniaxial deformation with respect to rotated material axes
 
 |vspace|
 
-Here are the :ref:`solutions to Steps 14-21<lab2_section2_step8_solutions>`.
+Here are the :ref:`solutions to Steps 14-21<lab2_section1_step21_solutions>`.
 
 
 .. _isotropic_biaxial_extension_of_unit_cube:
@@ -306,9 +306,9 @@ Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor compone
 
 2. Open the simulation results pane and use the components of the 2nd Piola-Kirchhoff stress tensor :math:`(\boldsymbol{T})` and the deformation gradient tensor :math:`(\boldsymbol{F})` to determine the Cauchy components of the stress tensor :math:`(\boldsymbol{\Sigma})` (Don't forget the Jacobian :math:`(J)`). See :ref:`this link <opening_simulation_pane>` for an example on how to open the simulation results pane.
 
-  .. Note::
+.. Note::
 
-      Hint: See equations in Section 3.1 of `Nash and Hunter (2007) <https://github.com/OpenCMISS-Examples/soft-tissue-mechanics-labs/releases/download/v2.0/chapter-heartmech_nash_hunter_2007_wspc_2up.pdf>`_.
+  Hint: See equations in Section 3.1 of `Nash and Hunter (2007) <https://github.com/OpenCMISS-Examples/soft-tissue-mechanics-labs/releases/download/v2.0/chapter-heartmech_nash_hunter_2007_wspc_2up.pdf>`_.
 
 
 |vspace|
@@ -319,9 +319,9 @@ Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor compone
 
 .. note::
 
-    By the end of this section you should be able to:
+  By the end of this section you should be able to:
 
-    - derive the Cauchy stress tensor components from the second Piola-Kirchhoff stress tensor components using the deformation gradient tensor.
+  - derive the Cauchy stress tensor components from the second Piola-Kirchhoff stress tensor components using the deformation gradient tensor.
 
 |vspace|
 
@@ -329,8 +329,8 @@ Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor compone
 
   By completing this lab, you should be able to:
 
-    - analyse large deformation kinematics with respect to reference spatial or rotated material fibre coordinates, and convert between them.
+  - analyse large deformation kinematics with respect to reference spatial or rotated material fibre coordinates, and convert between them.
 
-    - analyse stress tensors with respect to reference spatial or rotated material fibre coordinates, and convert between them.
+  - analyse stress tensors with respect to reference spatial or rotated material fibre coordinates, and convert between them.
 
 
