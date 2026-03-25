@@ -297,7 +297,7 @@ e. Will the invariants of :math:`\boldsymbol{C}` be the same or different when c
 |vspace|
 
 ===================================================================================
-OPTIONAL (NOT ASSESSED): Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor components
+SECTION 2 (OPTIONAL/NOT ASSESSED): Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor components
 ===================================================================================
 
 1. Start OpenCMISS and load the "Kinematics analysis" project. Select "Model 1 (Uniaxial extension of unit cube)" from the drop down menu and click the "Run" button.
