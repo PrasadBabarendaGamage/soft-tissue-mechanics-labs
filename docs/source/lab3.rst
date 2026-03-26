@@ -25,7 +25,7 @@ Section 1 of :ref:`Lab 2<lab2>` demonstrated how rotating the material-fibre axi
 
   - What happened to the components of the stress tensor as the material-fibre axis was rotated? Why?
   
-All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 1 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`. The difference here is that we will now consider **anisotropic** mechanical properties that describe different stress-strain response alonf the different material axes.
+All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 1 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`. The difference here is that we will now consider **anisotropic** mechanical properties that describe different stress-strain response along the different material axes.
 
 ===================================================
 Section 1: Deriving components of the stress tensor
