@@ -30,6 +30,8 @@ Before starting this lab, please be sure to have completed :ref:`Lab 1: Analysin
 Section 1: Transforming stresses between rotated coordinate systems
 ===================================================================
 
+.. _isotropic_biaxial_extension_of_unit_cube:
+
 Equi-biaxial extension of a unit cube
 -------------------------------------
 
@@ -277,8 +279,6 @@ Uniaxial deformation with respect to rotated material axes
 Here are the :ref:`solutions to Steps 14-21<lab2_section1_step21_solutions>`.
 
 
-.. _isotropic_biaxial_extension_of_unit_cube:
-
 Questions to think about:
 -------------------------
 
@@ -296,9 +296,19 @@ e. Will the invariants of :math:`\boldsymbol{C}` be the same or different when c
 
 |vspace|
 
-===================================================================================
+.. note::
+
+  By completing this lab, you should be able to:
+
+  - analyse large deformation kinematics with respect to reference spatial or rotated material fibre coordinates, and convert between them.
+
+  - analyse stress tensors with respect to reference spatial or rotated material fibre coordinates, and convert between them.
+
+|vspace|
+
+===========================================================================================================
 Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor components (OPTIONAL/NOT ASSESSED)
-===================================================================================
+===========================================================================================================
 
 1. Start OpenCMISS and load the "Kinematics analysis" project. Select "Model 1 (Uniaxial extension of unit cube)" from the drop down menu and click the "Run" button.
 
@@ -323,14 +333,5 @@ Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor compone
 
   - derive the Cauchy stress tensor components from the second Piola-Kirchhoff stress tensor components using the deformation gradient tensor.
 
-|vspace|
-
-.. note::
-
-  By completing this lab, you should be able to:
-
-  - analyse large deformation kinematics with respect to reference spatial or rotated material fibre coordinates, and convert between them.
-
-  - analyse stress tensors with respect to reference spatial or rotated material fibre coordinates, and convert between them.
 
 
