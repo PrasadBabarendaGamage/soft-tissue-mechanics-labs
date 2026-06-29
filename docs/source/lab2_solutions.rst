@@ -62,6 +62,10 @@ Step 13: Equi-biaxial extension of a unit cube
 Steps 14-21: Uniaxial extension of a unit cube
 =========================================
 
+.. Note::
+  The strain tensors :math:`\boldsymbol{E_{ref}}` and :math:`\boldsymbol{E_{fib}}` are consistent with Model 1 of :ref:`Lab 1 <lab1>`, but the stress tensors :math:`\boldsymbol{T_{ref}}` and :math:`\boldsymbol{T_{fib}}` are different to the values in Neon because the stress-strain constitutive relations were different to that implemented in Neon. 
+
+
 :math:`\theta=0` degrees (Steps 14-15):
 
 .. math::

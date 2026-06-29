@@ -124,30 +124,17 @@ Equi-biaxial deformation with respect to rotated material fibre axes
 
 |vspace|
 
-10. From the solution output, write down  :math:`\boldsymbol{T}_{fib}` (the second Piola-Kirchhoff stress tensor with respect to the material fibre axes).
-
-    The relationship between second Piola-Kirchhoff stress tensors defined with respect to reference spatial and material fibre coordinates is (note the similarity to Step 7):
+10. From the solution output, write down :math:`\boldsymbol{T}_{fib}` (the second Piola-Kirchhoff stress tensor with respect to the material fibre axes). The relationship between second Piola-Kirchhoff stress tensors defined with respect to reference spatial and material fibre coordinates is (note the similarity to Step 7):
 
     .. math::
 
       \boldsymbol{T}_{fib} = \boldsymbol{Q}^{T} \boldsymbol{T}_{ref} \boldsymbol{Q}
 
-    Invert this equation, and then calculate the second Piola-Kirchhoff stress components with respect to the reference spatial axes (:math:`\boldsymbol{T}_{ref}`) from the following components of the second Piola-Kirchhoff stress tensor with respect to the material fibre axes (:math:`\boldsymbol{T}_{fib}`):
-
-    .. math::
-
-      \boldsymbol{T_{fib}} =
-      \begin{bmatrix}
-        330.345   & -190.725  & 0 \\
-        -190.725  & 110.115   & 0 \\
-        0       & 0       & 0
-      \end{bmatrix}
-
-
+    Invert this equation, and then calculate the second Piola-Kirchhoff stress components with respect to the reference spatial axes (:math:`\boldsymbol{T}_{ref}`).
 
 |vspace|
 
-11. Check your answers to Step 10 against the simulation results.
+11.   Check your answers to Step 10 against the simulation results.
 
 |vspace|
 
@@ -195,7 +182,7 @@ Uniaxial extension of a unit cube
 
     .. Note::
 
-        This is the same deformation used in Model 1 in :ref:`Lab 1 <lab1>`, so you should not need to re-do these calculations.
+        This is the same deformation used in Model 1 in :ref:`Lab 1 <lab1>`, so you should not need to re-do these calculations. 
 
         For this particular model, the second Piola-Kirchhoff stress tensors with respect to both the reference spatial, and material fibre axes, are:
 
@@ -208,14 +195,16 @@ Uniaxial extension of a unit cube
             0      & 0       & 0
           \end{bmatrix}
 
-        (**Note:** While the uniaxial deformation in Model 1 of :ref:`Lab 1 <lab1>` is the same as that considered here, the **stress tensors are different between thse two labs** because different stress-strain constitutive relations have been used - this difference will be covered in :ref:`Lab 3 <lab3>`).
+        **Note:** 
+          - While the uniaxial deformation in Model 1 of :ref:`Lab 1 <lab1>` is the same as that considered here, the **values of the stress tensors above are different to those in Neon** because different stress-strain constitutive relations have been used. 
+          - This difference will be covered in :ref:`Lab 3 <lab3>`.
 
 |vspace|
 
 Uniaxial deformation with respect to rotated material axes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-16. Now consider the same deformation, except that the material fibre axes are no longer aligned with the reference spatial axes. They are now rotated anti-clockwise by an angle of :math:`\theta=30` degrees from the :math:`X_{1}` axis (in the :math:`X_{1}`-:math:`X_{2}` plane), as shown in the figure below.
+16.   Now consider the same deformation, except that the material fibre axes are no longer aligned with the reference spatial axes. They are now rotated anti-clockwise by an angle of :math:`\theta=30` degrees from the :math:`X_{1}` axis (in the :math:`X_{1}`-:math:`X_{2}` plane), as shown in the figure below.
 
     .. image:: images/uniaxial_30_degrees_fibres.png
 
@@ -332,6 +321,3 @@ Section 2: Transforming from 2nd Piola-Kirchhoff to Cauchy stress tensor compone
   By the end of this section you should be able to:
 
   - derive the Cauchy stress tensor components from the second Piola-Kirchhoff stress tensor components using the deformation gradient tensor.
-
-
-
