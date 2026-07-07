@@ -146,7 +146,7 @@ Equi-biaxial deformation with respect to rotated material fibre axes
 
   .. note::
 
-    You should not need to do any calculations to answer this questions. It is fine to do so if you would like some extra practice - just perform steps 15-20 with :math:`\theta=45` degrees by selecting the Model 4 then Model 6 from the "Run" menu.
+    You should not need to do any calculations to answer this questions. It is fine to do so if you would like some extra practice - just perform steps 7-12 with :math:`\theta=45` degrees by selecting the Model 4 then Model 6 from the "Run" menu.
 
 |vspace|
 
