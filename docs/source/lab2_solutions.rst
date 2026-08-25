@@ -6,141 +6,13 @@
 .. _lab2_solutions:
 
 ***************************
-Lab 2, Section 2: Solutions
+Lab 2, Section 1: Solutions
 ***************************
 
-.. _lab2_section2_step8_solutions:
-
-=========================================
-Steps 1-8: Uniaxial extension of a unit cube
-=========================================
-
-:math:`\theta=0` degrees (Steps 1-2):
-
-.. math::
-
-    \boldsymbol{E_{ref}} = \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.6250 & 0       & 0 \\
-      0      & -0.1667 & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
-    \begin{bmatrix}
-      440.5  & 0       & 0 \\
-      0      & 0       & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-|vspace|
-
-:math:`\theta=30` degrees (Steps 3-7):
-
-.. math::
-
-    \boldsymbol{E_{ref}} = 
-    \begin{bmatrix}
-      0.6250 & 0       & 0 \\
-      0      & -0.1667 & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.4271 & -0.3428  & 0 \\
-     -0.3428 &  0.0313  & 0 \\
-      0      &  0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      440.5  & 0       & 0 \\
-      0      & 0       & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
-    \begin{bmatrix}
-      330.345   & -190.725  & 0 \\
-      -190.725  & 110.115   & 0 \\
-      0       & 0       & 0
-    \end{bmatrix}
-
-|vspace|
-
-:math:`\theta=45` degrees (Step 8):
-
-.. math::
-
-    \boldsymbol{E_{ref}} = 
-    \begin{bmatrix}
-      0.6250 & 0       & 0 \\
-      0      & -0.1667 & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-      0.2292 & -0.3958  & 0 \\
-     -0.3958 &  0.2292  & 0 \\
-      0      &  0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      440.5  & 0       & 0 \\
-      0      & 0       & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
-    \begin{bmatrix}
-      220.2   & -220.2  & 0 \\
-      -220.2  & 220.2   & 0 \\
-      0       & 0       & 0
-    \end{bmatrix}
-
-|vspace|
-
-:math:`\theta=90` degrees (Step 8):
-
-.. math::
-
-    \boldsymbol{E_{ref}} = 
-    \begin{bmatrix}
-      0.6250 & 0       & 0 \\
-      0      & -0.1667 & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{E_{fib}} = 
-    \begin{bmatrix}
-     -0.1667 & 0       & 0 \\
-      0      & 0.6250  & 0 \\
-      0      & 0       & -0.1667
-    \end{bmatrix}
-
-    \boldsymbol{T_{ref}} = 
-    \begin{bmatrix}
-      440.5  & 0       & 0 \\
-      0      & 0       & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-    \boldsymbol{T_{fib}} = 
-    \begin{bmatrix}
-      0      & 0       & 0 \\
-      0      & 440.5   & 0 \\
-      0      & 0       & 0
-    \end{bmatrix}
-
-|vspace|
-
-.. _lab2_section2_step21_solutions:
+.. _lab2_section1_step13_solutions:
 
 ==============================================
-Step 21: Equi-biaxial extension of a unit cube
+Step 13: Equi-biaxial extension of a unit cube
 ==============================================
 
 :math:`\theta=45` degrees:
@@ -182,6 +54,140 @@ Step 21: Equi-biaxial extension of a unit cube
     \end{bmatrix}
 
 |vspace|
+
+
+.. _lab2_section1_step21_solutions:
+
+=========================================
+Steps 14-21: Uniaxial extension of a unit cube
+=========================================
+
+.. Note::
+  The strain tensors :math:`\boldsymbol{E_{ref}}` and :math:`\boldsymbol{E_{fib}}` are consistent with Model 1 of :ref:`Lab 1 <lab1>`, but the stress tensors :math:`\boldsymbol{T_{ref}}` and :math:`\boldsymbol{T_{fib}}` are different to the values in Neon because the stress-strain constitutive relations were different to that implemented in Neon. 
+
+
+:math:`\theta=0` degrees (Steps 14-15):
+
+.. math::
+
+    \boldsymbol{E_{ref}} = \boldsymbol{E_{fib}} = 
+    \begin{bmatrix}
+      0.6250 & 0       & 0 \\
+      0      & -0.1667 & 0 \\
+      0      & 0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{T_{ref}} = \boldsymbol{T_{fib}} = 
+    \begin{bmatrix}
+      440.5  & 0       & 0 \\
+      0      & 0       & 0 \\
+      0      & 0       & 0
+    \end{bmatrix}
+
+|vspace|
+
+:math:`\theta=30` degrees (Steps 16-20):
+
+.. math::
+
+    \boldsymbol{E_{ref}} = 
+    \begin{bmatrix}
+      0.6250 & 0       & 0 \\
+      0      & -0.1667 & 0 \\
+      0      & 0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{E_{fib}} = 
+    \begin{bmatrix}
+      0.4271 & -0.3428  & 0 \\
+     -0.3428 &  0.0313  & 0 \\
+      0      &  0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{T_{ref}} = 
+    \begin{bmatrix}
+      440.5  & 0       & 0 \\
+      0      & 0       & 0 \\
+      0      & 0       & 0
+    \end{bmatrix}
+
+    \boldsymbol{T_{fib}} = 
+    \begin{bmatrix}
+      330.345   & -190.725  & 0 \\
+      -190.725  & 110.115   & 0 \\
+      0       & 0       & 0
+    \end{bmatrix}
+
+|vspace|
+
+:math:`\theta=45` degrees (Step 21):
+
+.. math::
+
+    \boldsymbol{E_{ref}} = 
+    \begin{bmatrix}
+      0.6250 & 0       & 0 \\
+      0      & -0.1667 & 0 \\
+      0      & 0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{E_{fib}} = 
+    \begin{bmatrix}
+      0.2292 & -0.3958  & 0 \\
+     -0.3958 &  0.2292  & 0 \\
+      0      &  0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{T_{ref}} = 
+    \begin{bmatrix}
+      440.5  & 0       & 0 \\
+      0      & 0       & 0 \\
+      0      & 0       & 0
+    \end{bmatrix}
+
+    \boldsymbol{T_{fib}} = 
+    \begin{bmatrix}
+      220.2   & -220.2  & 0 \\
+      -220.2  & 220.2   & 0 \\
+      0       & 0       & 0
+    \end{bmatrix}
+
+|vspace|
+
+:math:`\theta=90` degrees (Step 21):
+
+.. math::
+
+    \boldsymbol{E_{ref}} = 
+    \begin{bmatrix}
+      0.6250 & 0       & 0 \\
+      0      & -0.1667 & 0 \\
+      0      & 0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{E_{fib}} = 
+    \begin{bmatrix}
+     -0.1667 & 0       & 0 \\
+      0      & 0.6250  & 0 \\
+      0      & 0       & -0.1667
+    \end{bmatrix}
+
+    \boldsymbol{T_{ref}} = 
+    \begin{bmatrix}
+      440.5  & 0       & 0 \\
+      0      & 0       & 0 \\
+      0      & 0       & 0
+    \end{bmatrix}
+
+    \boldsymbol{T_{fib}} = 
+    \begin{bmatrix}
+      0      & 0       & 0 \\
+      0      & 440.5   & 0 \\
+      0      & 0       & 0
+    \end{bmatrix}
+
+|vspace|
+
 
 
 

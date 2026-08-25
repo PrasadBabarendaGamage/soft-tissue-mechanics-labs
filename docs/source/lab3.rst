@@ -21,11 +21,11 @@ Before starting this lab, please be sure to have completed:
   a. :ref:`Lab 1: Analysing deformation in isotropic materials <lab1>`, and
   b. :ref:`Lab 2: Stress transformations <lab2>`.
 
-Section 2 of :ref:`Lab 2<lab2>` demonstrated how rotating the material-fibre axis with respect to the reference axes influences the components of the stress tensor.  For the model in :ref:`Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`, which considers an **isotropic cube subject to equi-biaxial deformation**, remind yourself:
+Section 1 of :ref:`Lab 2<lab2>` demonstrated how rotating the material-fibre axis with respect to the reference axes influences the components of the stress tensor.  For the model in :ref:`Section 1 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`, which considers an **isotropic cube subject to equi-biaxial deformation**, remind yourself:
 
   - What happened to the components of the stress tensor as the material-fibre axis was rotated? Why?
   
-All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`. The difference here is that we will now consider **anisotropic** mechanical properties that describe different stress-strain response alonf the different material axes.
+All of the analyses in the present lab will be based on the equi-biaxial deformation described in :ref:`Section 1 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`. The difference here is that we will now consider **anisotropic** mechanical properties that describe different stress-strain response along the different material axes.
 
 ===================================================
 Section 1: Deriving components of the stress tensor
@@ -67,7 +67,7 @@ Section 2: Analysing stresses during equi-biaxial deformation
 Analysing stresses with respect to the reference coordinates
 ------------------------------------------------------------
 
-2. Using OpenCMISS, load the stress analysis project and run Model 1. (The procedure for running this simulation in OpenCMISS is outlined in :ref:`steps 1-3 in Section 2 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`). See :ref:`this link <opening_simulation_pane>` for an example on how to open the simulation results pane.
+2. Using OpenCMISS, load the stress analysis project and run Model 1. (The procedure for running this simulation in OpenCMISS is outlined in :ref:`steps 1-3 in Section 1 of Lab 2 <isotropic_biaxial_extension_of_unit_cube>`). See :ref:`this link <opening_simulation_pane>` for an example on how to open the simulation results pane.
 
 |vspace|
 
@@ -151,7 +151,7 @@ Stresses with respect to rotated material-fibre axes
 
 |vspace|
 
-12. Determine the second Piola-Kirchhoff stress components with respect to the reference coordinate axes (:math:`\boldsymbol{T}_{ref}`) via an appropriate tensor transformation (see :ref:`Step 3 of Section 2 of Lab 2a <tensor_transformations>`). Check your answers against the simulation results.
+12. Determine the second Piola-Kirchhoff stress components with respect to the reference coordinate axes (:math:`\boldsymbol{T}_{ref}`) via an appropriate tensor transformation (see :ref:`Steps 7 and 10 of Section 1 of Lab 2 <tensor_transformations>`). Check your answers against the simulation results.
 
 |vspace|
 

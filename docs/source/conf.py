@@ -49,8 +49,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Soft-tissue-mechanics-lab'
-copyright = u'2017, Martyn Nash, Hugh Sorby, Thiranja Prasad Babarenda Gamage, Vicky Wang'
-author = u'Martyn Nash, Hugh Sorby, Thiranja Prasad Babarenda Gamage, Vicky Wang'
+copyright = u'2026, Martyn Nash, Hugh Sorby, Thiranja Prasad Babarenda Gamage, Vicky Wang, Max Dang Vu'
+author = u'Martyn Nash, Hugh Sorby, Thiranja Prasad Babarenda Gamage, Vicky Wang, Max Dang Vu'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -368,4 +368,5 @@ epub_exclude_files = ['search.html']
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'https://docs.python.org/': None}
+# intersphinx_mapping = {'https://docs.python.org/': None}      # old syntax
+intersphinx_mapping = {'python': ('https://docs.python.org/', None)}
